@@ -1,0 +1,14 @@
+.carousel__pagination-button--active {
+    background-color: #F25A2B;
+    border-radius: 20%;
+  }
+  
+  .carousel__pagination-button::after {
+    background-color: white;
+  }
+  
+  .carousel__prev,
+  .carousel__next {
+    color: var(--vc-clr-white);
+    box-sizing: content-box;
+  }
