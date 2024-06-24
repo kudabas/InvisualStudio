@@ -14,21 +14,21 @@
           <div class="pt-[100px] flex justify-between">
             <div class="transition duration-300 hover:rotate-12">
               <a
-                href="#about"
+                href="mailto:Invisual.Id@gmail.com"
                 class="underline block mt-4 sm:inline-block text-bodas text-md transition duration-300 rounded-xl ease-in-out mr-4 lg:mr-3"
                 >Email</a
               >
             </div>
             <div class="transition duration-300 hover:rotate-12">
               <a
-                href="#about"
+                href="https://wa.me/6282295555314" target="_blank"
                 class="underline block mt-4 sm:inline-block text-bodas text-md transition duration-300 rounded-xl ease-in-out mr-4 lg:mr-3"
                 >Whatsapp</a
               >
             </div>
             <div class="transition duration-300 hover:rotate-12">
               <a
-                href="#about"
+                href="https://wa.me/6282295555314" target="_blank"
                 class="underline block mt-4 sm:inline-block text-bodas text-md transition duration-300 rounded-xl ease-in-out mr-4 lg:mr-3"
                 >Phone</a
               >
