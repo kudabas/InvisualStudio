@@ -5,18 +5,18 @@
         <div class=" rounded-xl p-5">
           <div class="grid grid-rows-4 grid-flow-col gap-0">
             <div
-              class="col-span-2 row-span-1 lg:col-1 lg:row-span-2 w-[80px] lg:w-[200px] rounded-xl"
+              class="col-span-2 row-span-1 lg:col-1 lg:row-span-2 rounded-xl"
             >
               <div class="">
-                <img src="@/assets/project/vis.png" class="rounded-xl" />
+                <img src="@/assets/project/vis.png" class="mx-auto w-[100px] lg:w-[200px] rounded-xl" />
               </div>
             </div>
             <div
-              class="relative col-span-2 row-span-1 lg:col-1 lg:row-span-2 w-[80px] lg:w-[200px] rounded-xl"
+              class="relative col-span-2 row-span-1 lg:col-1 lg:row-span-2 rounded-xl"
             >
               <div
-                class="absolute bottom-10 lg:bottom-[80px] text-yoman text-bodas text-md font-light lg:-rotate-90"
-              >
+              class="text-center absolute bottom-10 left-[100px] lg:left-0 lg:bottom-[80px] text-yoman text-bodas text-[30px] lg:text-md font-light lg:-rotate-90">
+              
                 <h1>Visual Content</h1>
                 <h1>Marketing</h1>
               </div>

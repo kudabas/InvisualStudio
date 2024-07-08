@@ -8,10 +8,10 @@
             <h1 class="text-md underline ">CONTACT</h1>
           </div>
           <div class="p-3  lg:pr-0">
-            <h1>AntapaniResidence,</h1>
-            <h1>Jl.Malongbong Raya Blok C10</h1>
+            <h1>Antapani Residence.</h1>
+            <h1>Jl.Malangbong Raya Blok C10</h1>
             <h2>0822-2555-5114</h2>
-            <h3>Invisual.Id@gmail.com</h3>
+            <h3>Invisual.id@gmail.com</h3>
             <!-- <div class>
               <a href="https://www.instagram.com/chiclin.ciparay?igsh=amlpOHNtMWM5NHIw" target="_blank">
                 <img src="../assets/insta.png" alt="catra"

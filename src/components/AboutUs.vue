@@ -33,16 +33,24 @@
             </h2>
           </div>
           <div class="flex pt-20 pb-5">
+            <router-link to="/project" custom v-slot="{ navigate }">
+              <button @click="navigate" role="link">
             <a
               href="#about"
               class="underline block mt-4 sm:inline-block sm:mt-0 text-bodas text-md lg:text-sm transition duration-300 py-[9px] px-[20px] rounded-xl ease-in-out hover:bg-oren mr-4 lg:mr-0"
               >Our Work</a
             >
+              </button>
+            </router-link>
+            <router-link to="/findus" custom v-slot="{ navigate }">
+              <button @click="navigate" role="link">
             <a
               href="#about"
               class="underline block mt-4 sm:inline-block sm:mt-0 text-bodas text-md lg:text-sm transition duration-300 py-[9px] px-[20px] rounded-xl ease-in-out hover:bg-oren mr-4 lg:mr-3"
               >Know More</a
             >
+              </button>
+            </router-link>
           </div>
         </div>
         <div

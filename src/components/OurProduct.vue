@@ -1,62 +1,44 @@
 <template>
-    <div id="service">
-        <div class=" lg:px-40 lg:pb-20">
-            <div class="grid justify-items-center gap-4 lg:px-15">
-                <div
-                    class="bg-prod bg-center bg-cover border-solid border-4 border-bodas transition duration-300 ease-in-out border-primary block max-w-[1100px] rounded-[20px] shadow-lg bg-bodas bg-opacity-50 mb-10 lg:mb-10 lg:w-[1100px] lg:h-[280px]">
-                    <div class="text-center p-5">
-                        <h1 class="mb-5">
-                            <span class="text-md font-light mr-3">Our Amazing </span>
-                            <span class=" text-lg text-center font-bold">Product</span>
-                        </h1>
-                    </div>
-                    <div class="grid justify-items-center grid-cols-3 gap-4 lg:grid-cols-8 lg:px-16 mb-3">
-                        <div class="">
-                            <img class="mx-auto h-[100px] lg:h-[30px]" src="../assets/product/hilo.png" />
-                        </div>
-                        <div class="">
-                            <img class="mx-auto h-[100px] lg:h-[50px]" src="../assets/product/tpli.png" />
-                        </div>
-                        <div class="">
-                            <img class="mx-auto h-[100px] lg:h-[40px]" src="../assets/product/imo.png" />
-                        </div>
-                        <div class="">
-                            <img class="mx-auto h-[100px] lg:h-[40px]" src="../assets/product/ezv.png" />
-                        </div>
-                        <div class="">
-                            <img class="mx-auto h-[100px] lg:h-[30px]" src="../assets/product/solu.png" />
-                        </div>
-                        <div class="">
-                            <img class="mx-auto h-[100px] lg:h-[40px]" src="../assets/product/conc.png" />
-                        </div>
-                        <div class="">
-                            <img class="mx-auto h-[100px] lg:h-[40px]" src="../assets/product/gpst.png" />
-                        </div>
-                        <div class="">
-                            <img class="mx-auto h-[100px] lg:h-[40px]" src="../assets/product/spc1.png" />
-                        </div>
-                    </div>
-                    <div class="grid justify-items-center grid-cols-2 gap-4 lg:grid-cols-3 lg:px-16">
-                        <div class="">
-                            <img class="mx-auto h-[100px] lg:h-[40px]" src="../assets/product/soli.png" />
-                        </div>
-                        <div class="">
-                            <img class="mx-auto h-[100px] lg:h-[30px]" src="../assets/product/hikv.png" />
-                        </div>
-                        <div class="">
-                            <img class="mx-auto h-[100px] lg:h-[50px]" src="../assets/product/wanwa.png" />
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+    <header class="fixed w-full z-10 bg-gray-900 sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3">
+      <div class="flex items-center justify-between px-4 py-3 sm:p-0">
+        <div>
+          <img class="h-8" src="@/assets/logo/logo1.png" alt="Workcation">
         </div>
-    </div>
-</template>
-
-<script>
-
-export default {};
-</script>
-
-<style></style>
+        <div class="sm:hidden">
+          <button @click="isOpen = !isOpen" type="button" class="block text-gray-500 hover:text-white focus:text-white focus:outline-none">
+            <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+              <path v-if="isOpen" fill-rule="evenodd" d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"/>
+              <path v-if="!isOpen" fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <nav :class="isOpen ? 'block' : 'hidden'" class="px-2 pt-2 pb-4 sm:flex sm:p-0">
+        <a href="#" class="block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800">List your property</a>
+        <a href="#" class="mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2">Trips</a>
+        <a href="#" class="mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2">Messages</a>
+        <router-link to="/" custom v-slot="{ navigate }">
+            <button @click="navigate" role="link">
+              <a href="#about"
+                class="no-underline block mt-4 sm:inline-block sm:mt-0 text-bodas hover:text-hideung text-md lg:text-sm transition duration-300 py-[9px] px-[20px] rounded-xl ease-in-out hover:bg-koneng mr-4 lg:mr-3">Home</a>
+            </button>
+          </router-link>
+          <router-link to="/" custom v-slot="{ navigate }">
+            <button @click="navigate" role="link">
+              <a href="#about"
+                class="no-underline block mt-4 sm:inline-block sm:mt-0 text-bodas hover:text-hideung text-md lg:text-sm transition duration-300 py-[9px] px-[20px] rounded-xl ease-in-out hover:bg-koneng mr-4 lg:mr-3">Home</a>
+            </button>
+          </router-link>
+      </nav>
+    </header>
+  </template>
+  
+  <script>
+  export default {
+    data() {
+      return {
+        isOpen: false,
+      }
+    },
+  }
+  </script>

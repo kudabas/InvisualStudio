@@ -4,48 +4,27 @@
       <div class="">
         <div class="rounded-xl p-5">
           <div class="grid grid-rows-4 grid-flow-col gap-0">
-            <div
-              class="col-span-2 row-span-1 lg:col-1 lg:row-span-2 w-[150px] lg:w-[200px] rounded-xl"
-            >
+            <div class="col-span-2 row-span-1 lg:col-1 lg:row-span-2 rounded-xl">
               <div class="">
-                <img src="@/assets/project/bran.png" class="rounded-xl" />
+                <img src="@/assets/project/bran.png" class="w-[100px] lg:w-[200px] mx-auto rounded-xl" />
               </div>
             </div>
-            <div
-              class="relative col-span-2 row-span-1 lg:col-1 lg:row-span-2 w-[200px] lg:w-[200px] rounded-xl"
-            >
+            <div class="relative col-span-2 row-span-1 lg:col-1 lg:row-span-2 rounded-xl">
               <div
-                class="absolute bottom-10 lg:bottom-[80px] text-yoman text-bodas text-md font-light lg:-rotate-90"
-              >
+                class="text-center absolute bottom-10 left-[100px] lg:left-0 lg:bottom-[80px] text-yoman text-bodas text-[30px] lg:text-md font-light lg:-rotate-90">
                 <h1>Branding</h1>
                 <h1>& Positioning</h1>
               </div>
             </div>
             <div class="col-span-2 row-span-2 lg:row-span-4 lg:col-span-2">
               <div class="p-3 pt-[0px]">
-                <Carousel
-                  :items-to-show="1"
-                  :autoplay="5000"
-                  :wrap-around="true"
-                >
+                <Carousel :items-to-show="1" :autoplay="5000" :wrap-around="true">
                   <Slide v-for="(item, index) in items" :key="index">
-                    <img
-                      class="w-full rounded-2xl"
-                      :src="item.imageUrl"
-                      alt="Image"
-                    />
-                    <div
-                      class="text-overlay absolute right-0 bottom-0 p-2 mr-7"
-                    >
-                      <a
-                        class="px-2 my-auto group text-abhu"
-                        :href="item.url"
-                        target="_blank"
-                      >
+                    <img class="w-full rounded-2xl" :src="item.imageUrl" alt="Image" />
+                    <div class="text-overlay absolute right-0 bottom-0 p-2 mr-7">
+                      <a class="px-2 my-auto group text-abhu" :href="item.url" target="_blank">
                         Details
-                        <div
-                          class="bg-amber-500 h-[2px] w-0 group-hover:w-full transition-all duration-500"
-                        ></div>
+                        <div class="bg-amber-500 h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
                       </a>
                     </div>
                   </Slide>
