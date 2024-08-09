@@ -1,12 +1,12 @@
 <template>
   <div id="location">
-    <div class="pb-[20px] pt-[100px] lg:pt-[20px] lg:px-60 flex-container">
+    <div class="pb-[20px] pt-[100px] lg:pt-[20px] w-full lg:px-60 flex-container">
       <div class="grid grid-rows-10 grid-flow-col gap-4">
         <div
           data-aos="zoom-in"
           data-aos-duration="500"
           data-aos-offset="500"
-          class="bg-biru row-span-4 col-span-4 lg:row-span-4 lg:col-span-4 p-3 lg:p-5 w-[170px] lg:w-full"
+          class="bg-biru row-span-4 col-span-4 lg:row-span-4 lg:col-span-4 p-3 lg:p-5 w-[100%] lg:w-full"
         >
           <h1 class="text-lg lg:text-llg font-bold text-bodas">See Our</h1>
           <h2 class="text-lg lg:text-llg font-bold text-bodas">
@@ -27,7 +27,7 @@
           data-aos="zoom-in"
           data-aos-duration="500"
           data-aos-offset="300"
-          class="bg-oren col-span-4 row-span-6 lg:col-span-4 lg:row-span-6 pt-[100px] lg:pt-5 p-3 lg:p-5 w-[170px] lg:w-full"
+          class="bg-oren col-span-4 row-span-6 lg:col-span-4 lg:row-span-6 pt-[100px] lg:pt-5 p-3 lg:p-5 w-[100%] lg:w-full"
         >
           <h1 class="text-lg lg:text-llg font-bold text-bodas">Know Us</h1>
           <h2 class="text-lg lg:text-llg font-bold text-bodas">More</h2>
@@ -54,7 +54,7 @@
           data-aos="zoom-in"
           data-aos-duration="500"
           data-aos-offset="600"
-          class="bg-pink row-span-7 col-span-6 lg:row-span-7 lg:col-span-6 p-5 w-[200px] lg:w-full"
+          class="bg-pink row-span-7 col-span-6 lg:row-span-7 lg:col-span-6 p-5 w-[100%] lg:w-full"
         >
           <h1 class="text-lg lg:text-llg font-bold text-bodas">
             Need Design Assets
@@ -93,7 +93,7 @@
           data-aos="zoom-in"
           data-aos-duration="500"
           data-aos-offset="300"
-          class="bg-koneng row-span-3 col-span-6 lg:row-span-3 lg:col-span-6 p-5 w-[200px] lg:w-full"
+          class="bg-koneng row-span-3 col-span-6 lg:row-span-3 lg:col-span-6 p-5 w-[100%] lg:w-full"
         >
           <h1 class="text-lg lg:text-llg font-bold text-hideung">Our</h1>
           <h2 class="text-lg lg:text-llg font-bold text-hideung">Location</h2>

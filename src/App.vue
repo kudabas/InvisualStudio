@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-kabeh bg-center bg-cover font-yoman">
+  <div class="bg-kabeh bg-alit bg-center font-yoman">
     <NavbarDigdaya />
     <!-- <OurProduct /> -->
     <router-view />

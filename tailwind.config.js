@@ -17,6 +17,9 @@ export default {
         bates: "url(/src/assets/bates.png)",
         kabeh: "url(/src/assets/bginvi.png)"
       },
+      backgroundSize: {
+        alit: "100%, 100%"
+      },
       colors: {
         primary: '#151515',
         bodas: '#FFFFFF',

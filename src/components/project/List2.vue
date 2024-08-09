@@ -2,22 +2,22 @@
   <div id="about">
     <div class="pb-[10px] pt-[50px] lg:pt-[0px] 2xl:px-60 flex-container">
       <div class="">
-        <div class="rounded-xl p-5">
-          <div class="grid grid-rows-4 grid-flow-col gap-0">
-            <div class="col-span-2 row-span-1 lg:col-1 lg:row-span-2 rounded-xl">
-              <div class="">
-                <img src="@/assets/project/sos.png" class="mx-auto w-[100px] lg:w-[200px] rounded-xl" />
+        <div class="rounded-xl">
+          <div class="grid grid-cols-2 sm:grid-cols-6 lg:grid-rows-4 lg:grid-flow-col gap-0">
+            <div class="flex justify-center lg:justify-start items-center lg:items-start col-span-1 sm:col-1 sm:row-span-2 rounded-xl">
+              <div class="p-2">
+                <img src="@/assets/project/sos.png" class=" w-[80px] lg:w-[230px] rounded-xl " />
               </div>
             </div>
-            <div class="relative col-span-2 lg:col-1 lg:row-span-2 w-[80px] lg:w-[200px] rounded-xl">
+            <div class="lg:relative col-span-1 sm:col-1 sm:row-span-2 w-[150px] lg:w-[200px] rounded-xl">
               <div
-              class="text-center absolute bottom-10 left-[100px] lg:left-0 lg:bottom-[80px] text-yoman text-bodas text-[30px] lg:text-md font-light lg:-rotate-90">
+              class="w-full lg:absolute pt-4 lg:pt-0 left-[100px] lg:left-[80px] lg:top-0 lg:bottom-[0px] text-yoman text-bodas text-[20px] lg:text-md font-light lg:-rotate-90">
                 <h1>Social Media</h1>
                 <h1>Management</h1>
               </div>
             </div>
-            <div class="col-span-2 row-span-2 lg:row-span-4 lg:col-span-2">
-              <div class="p-3 pt-[0px]">
+            <div class="col-span-2 row-span-2 lg:row-span-4 lg:col-span-5">
+              <div class="p-2">
                 <Carousel :items-to-show="1" :autoplay="5000" :wrap-around="true">
                   <Slide v-for="(item, index) in items" :key="index">
                     <img class="w-full rounded-2xl" :src="item.imageUrl" alt="Image" />
